@@ -1,0 +1,11 @@
+GDD portable v0.3.1
+
+Requisito: Docker Desktop activo. Configura `.env` con `DATABASE_URL`,
+`MINIO_ACCESS_KEY` y `MINIO_SECRET_KEY`.
+
+Desde esta carpeta, ejecuta en PowerShell:
+
+    .\up.ps1
+
+El script carga `gdd-portable.tar` y levanta backend, workers, Redis y MinIO
+sin reconstruir. PostgreSQL debe estar accesible desde la URL de `.env`.
